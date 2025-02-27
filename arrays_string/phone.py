@@ -8,10 +8,11 @@ for digit in given_digits:
     print(phone_dict[int(digit)])
 
 
-temp = []
-for i in "abc":
-    for j in "def":
-        temp = []
-        temp.append(i)
-        temp.append(j)
-        print(temp)
+
+# temp = []
+# for i in "abc":
+#     for j in "def":
+#         temp = []
+#         temp.append(i)
+#         temp.append(j)
+#         print(temp)
