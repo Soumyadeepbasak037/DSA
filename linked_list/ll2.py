@@ -72,6 +72,31 @@ class linked_list:
         new_node.next = curr.next
         curr.next = new_node
 
+    def del_at_beginning(self):
+        if self.head:
+            self.head = self.head.next
+            return
+        else:
+            print("LL doesnt have a head")
+            return
+
+    def del_at_end(self):
+        curr = self.head
+        if not curr:  # Empty list
+            return
+
+        if not self.head.next:  # Only one node
+            self.head = None
+            return
+
+        if curr.next.next:
+            curr = curr.next
+
+        curr.next = None
+
+    def del_at_indx(self, indx):
+        pass
+
     def reverse_list(self):
         prev = None
         current = self.head
