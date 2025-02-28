@@ -95,7 +95,20 @@ class linked_list:
         curr.next = None
 
     def del_at_indx(self, indx):
-        pass
+        if not self.head:
+            return
+
+        if (indx == 0):
+            self.del_at_beginning()
+            return
+
+        curr = self.head
+        counter = 0
+        while curr and counter < indx-1:
+            curr = curr.next
+            counter += 1
+        curr.next = curr.next.next
+        return
 
     def reverse_list(self):
         prev = None
