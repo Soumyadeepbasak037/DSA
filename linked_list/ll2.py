@@ -108,7 +108,6 @@ class linked_list:
             curr = curr.next
             counter += 1
         curr.next = curr.next.next
-        return
 
     def reverse_list(self):
         prev = None
