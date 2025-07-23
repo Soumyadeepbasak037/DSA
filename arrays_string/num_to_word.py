@@ -1,12 +1,14 @@
 def one_digit(num):
-    single_digit = ["zero'","one","two","three","four","five","six","seven","eight","nine"]
+    single_digit = ["","one","two","three","four","five","six","seven","eight","nine"]
     return (single_digit[num])
 
 def two_digit(num):
     tens = ["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
     others = ["twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"]
 
-
+    if(num ==0):
+        return 0
+    
     if(num<10):
         print(one_digit(num))
         return
@@ -32,4 +34,5 @@ def two_digit(num):
         return
 
 
-two_digit()    
+
+two_digit(50)    
