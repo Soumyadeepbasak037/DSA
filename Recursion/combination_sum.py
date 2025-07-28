@@ -7,7 +7,7 @@ def combosum(candidates,target):
         if (target < 0 or indx == len(candidates)):
             return
 
-        if candidates[indx] <= target:
+        if candidates[indx] <= target:                          
             arr.append(candidates[indx])
             backtrack(indx, target - candidates[indx], arr)
             arr.pop()

@@ -10,7 +10,7 @@ class Solution:
         elif(time<=deadline):
             return 1
         
-    def minEatingSpeed(self, piles: List[int], h: int) -> int:
+    def minEatingSpeed(self, piles, h: int) -> int:
         def custom_bs(piles,deadline):
             low = 1
             high = max(piles)
