@@ -15,7 +15,7 @@ def str_match_naive(parent,child):
     results = []
     
     if len(parent) == 0 and len(child) == 0:
-    return True
+        return True
     
     if(len(parent)<len_child):
         return False
@@ -52,6 +52,8 @@ def str_match(parent,child):
     return -1
  
 
+def KMP(paarent,child):
+    
 
 
 print(str_match_naive(parent,child))
