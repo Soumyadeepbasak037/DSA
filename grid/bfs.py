@@ -24,10 +24,11 @@ def bfs(start,target,grid):
     # print(visited)
     
     queue= []
-    queue.append((sx,sy,0)) #(x,y,distance)
+    queue.append((sx,sy,0)) #(x,y,distance)tup
     visited[sx][sy] = True
     
     while queue:
+        print(queue)
         x,y,dist = queue.pop(0)
         
         if((x,y) == (tx,ty)):
@@ -40,4 +41,14 @@ def bfs(start,target,grid):
                 queue.append((nx, ny, dist + 1))
     return -1
     
-print(bfs(start,target,grid))
+# print(bfs(start,target,grid))   
+
+def find_paths(grid,targetX,targetY,visited):
+    rows = len(grid)
+    cols = len(grid[0])
+
+    if()
+    
+    
+
+    
