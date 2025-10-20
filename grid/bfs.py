@@ -43,11 +43,25 @@ def bfs(start,target,grid):
     
 # print(bfs(start,target,grid))   
 
-def find_paths(grid,targetX,targetY,visited):
+def find_paths(grid,targetX,targetY):
     rows = len(grid)
     cols = len(grid[0])
+    visited = [[False]*cols for _ in range(rows)]
+    
+    res = []
+    path = []
 
-    if()
+    def backtrack(currX,currY):
+        if(currX,currY == targetX,targetY):
+            res.append(path[:])
+            return
+        
+        
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+
+        for dx,dy in directions:
+            currX = currX + dx
+            currY = 
     
     
 
