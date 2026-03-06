@@ -1,4 +1,4 @@
-addr = "25525511135"
+addr = "abcd"
 
 def partition(arr,k):
     res = []
@@ -16,4 +16,4 @@ def partition(arr,k):
     backtrack(arr,[],0)
     print(res)
 
-partition(addr,3)
+partition(addr,2)
